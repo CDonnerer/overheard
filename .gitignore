@@ -3,4 +3,5 @@
 
 # Folders to ignore
 data
+comments
 .ipynb_checkpoints
