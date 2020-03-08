@@ -1,17 +1,27 @@
 # cm-overheard
 
-Extract comments from arxiv source files. 
+Extract comments from arxiv source files.
 
+## Installation
 
-This is still early days, but is somewhat functional. Currently it takes today's arxiv RSS of cond-mat.str.el only, and gets the comments.
+```
+git clone {this}
+cd {this}
+pip install .
+```
 
-## Features
+## Usage
 
-* Get arxiv source file and extract tex files
-* Scrape comments from tex and write to file
+There are two entrypoints available.
 
-## TODO
+```
+overheard fetch --data path/to/data
+```
 
-* Refactor to sensible units
-* Temporary file storage for source/ extraction
-* Comment scraping not perfect
+This will get all of today's submissions and extract their source files.
+
+```
+overheard comments --data path/to/data
+```
+
+This will extract the comments out of the `tex` source files.
